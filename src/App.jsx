@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import { createLogger } from "vite";
 import {
   Acerca,
   Footer,
@@ -7,20 +9,17 @@ import {
   Platillos,
   Ubicacion,
 } from "./components";
-import {
-  lista_arroces,
-  lista_carnes,
-  lista_ensaladas,
-  lista_jugos,
-  lista_mariscos,
-  lista_ordenes,
-  lista_pollo,
-  lista_postres,
-  lista_sandwich,
-  lista_sopa,
-} from "./helpers";
 
 function App() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/categoriesproducts")
+      .then((res) => res.json())
+      .then(setProducts)
+      .catch((err) => console.log(err));
+  }, []);
+  console.log(products);
   return (
     <>
       <Header />
@@ -34,7 +33,7 @@ function App() {
             <div className='contenedor-menu'>
               <article className='menu-desayuno'>
                 <p className='categoria'>
-                  Desayuno •<span>Breakfast</span>
+                  Desayuno • <span>Breakfast</span>
                 </p>
                 <p className='descripcion-categoria'>
                   Servido con Mangu o Papas Fritas o Pure de Papa o Tostadas o
@@ -44,6 +43,7 @@ function App() {
                     or Green Bananas or Cassava
                   </span>
                 </p>
+                {products ?? products.map((product) => console.log(product))}
               </article>
 
               <article className='menu-carnes'>
@@ -58,9 +58,6 @@ function App() {
                     Served W/ Rice and beans or Green or Yellow Plantains or
                     Salad or Rice with Pigeon Peas or French Fries or Cassava.
                   </span>
-                  {lista_carnes.map((carne) => (
-                    <Platillos {...carne} />
-                  ))}
                 </p>
               </article>
 
@@ -68,70 +65,46 @@ function App() {
                 <p className='categoria'>
                   Sopas • <span>Soups</span>
                 </p>
-                {lista_sopa.map((sopa) => (
-                  <Platillos {...sopa} />
-                ))}
               </article>
 
               <article className='menu-sandwich'>
                 <p className='categoria'>Sandwich</p>
-                {lista_sandwich.map((sand) => (
-                  <Platillos {...sand} />
-                ))}
               </article>
 
               <article className='menu-pollo'>
                 <p className='categoria'>
                   Pollo • <span>Chicken</span>
                 </p>
-                {lista_pollo.map((pollo) => (
-                  <Platillos {...pollo} />
-                ))}
               </article>
 
               <article className='menu-mariscos'>
                 <p className='categoria'>
                   Mariscos • <span>Seafood</span>
                 </p>
-                {lista_mariscos.map((marisco) => (
-                  <Platillos {...marisco} />
-                ))}
               </article>
 
               <article className='menu-ensaladas'>
                 <p className='categoria'>
                   Ensaladas • <span>Salads</span>
                 </p>
-                {lista_ensaladas.map((salado) => (
-                  <Platillos {...salado} />
-                ))}
               </article>
 
               <article className='menu-ordenes'>
                 <p className='categoria'>
                   Ordenes Extras • <span>Side Orders</span>
                 </p>
-                {lista_ordenes.map((orden) => (
-                  <Platillos {...orden} />
-                ))}
               </article>
 
               <article className='menu-arroces'>
                 <p className='categoria'>
                   Arroces • <span>Rice</span>
                 </p>
-                {lista_arroces.map((arroz) => (
-                  <Platillos {...arroz} />
-                ))}
               </article>
 
               <article className='menu-postres'>
                 <p className='categoria'>
                   Postres • <span>Desserts</span>
                 </p>
-                {lista_postres.map((postre) => (
-                  <Platillos {...postre} />
-                ))}
               </article>
 
               <article className='menu-jugos'>
@@ -139,9 +112,6 @@ function App() {
                   Jugos Naturales & Batidos •
                   <span>Natural Juices & Shakes</span>
                 </p>
-                {lista_jugos.map((jugo) => (
-                  <Platillos {...jugo} />
-                ))}
               </article>
             </div>
           </div>
