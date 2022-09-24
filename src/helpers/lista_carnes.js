@@ -1,133 +1,107 @@
-export const lista = {
-            <div class="platillo">
-              <p class="nombre">HUEVO CON QUESO</p>
-              <p class="precio">$10.00</p>
-              <p class="descripcion">Egg and Cheese</p>
-            </div>
-
-
-            <div class="platillo">
-              <p class="nombre">BISTEC EN SALSA</p>
-              <p class="precio">$10.00</p>
-              <p class="descripcion">Beef Steak in Sauce</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">BISTEC SALTIADO</p>
-              <p class="precio">$10.00</p>
-              <p class="descripcion">Pepper Steak</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">BISTEC ENCEBOLLADO</p>
-              <p class="precio">$10.00</p>
-              <p class="descripcion">Onion Steak</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">BISTEC EMPANIZADO</p>
-              <p class="precio">$10.00</p>
-              <p class="descripcion">Bread Steak</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">CARNE DE RES GUISADA</p>
-              <p class="precio">$10.00</p>
-              <p class="descripcion">Beef Stew</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">COSTILLAS A LA BBQ</p>
-              <p class="precio">$8.00</p>
-              <p class="descripcion">BBQ Spare Ribs</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">RABITO GUISADO</p>
-              <p class="precio">$10.00</p>
-              <p class="descripcion">Oxtail Stew</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">PERNIL</p>
-              <p class="precio">$8.00</p>
-              <p class="descripcion">Roast Pork</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">CHIVO GISAD0</p>
-              <p class="precio">$10.00</p>
-              <p class="descripcion">Goat Stew</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">ESPAGUETIS CON ALBONDIGAS</p>
-              <p class="precio">$7.00</p>
-              <p class="descripcion">Spaghetti with Meatballs</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">CARNE DE CERDO FRITA</p>
-              <p class="precio">$10.00</p>
-              <p class="descripcion">Fried Pork</p>
-            </div>
-          </article>
-
-          <article class="menu-frituras">
-            <p class="categoria">Frituras • <span>Fritters</span> </p>
-
-            <div class="platillo">
-              <p class="nombre">ALCAPURRIA DE YUCA</p>
-              <p class="precio">$1.00</p>
-              <p class="descripcion">Stuffed Fried Cassava</p>
-            </div>
-
-
-            <div class="platillo">
-              <p class="nombre">ALCAPURRIA DE GUINEITO</p>
-              <p class="precio">$1.00</p>
-              <p class="descripcion">Stuffed Fried Geen Banana</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">CHICHARRON DE CERDO</p>
-              <p class="precio">$8.00</p>
-              <p class="descripcion">Pork Fried Chunks</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">RELLENO DE PAPA</p>
-              <p class="precio">$1.00</p>
-              <p class="descripcion">Stuffed Fried Potato</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">MORCILLA</p>
-              <p class="precio">$8.00</p>
-              <p class="descripcion">Blood Pudding</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">PASTELILLO JAMAIQUINO</p>
-              <p class="precio">$2.00</p>
-              <p class="descripcion">Jamaican Beef Patty</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">PASTELILLOS DE CARNE</p>
-              <p class="precio">$1.00</p>
-              <p class="descripcion">Beef Spanish Patty</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">PASTELILLOS DE CARNE/QUESO</p>
-              <p class="precio">$1.25</p>
-              <p class="descripcion">Beef/Cheese Spanish Patty</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">PASTELILLOS DE POLLO</p>
-              <p class="precio">$1.25</p>
-              <p class="descripcion">Spanish Chicken Patty</p>
-            </div>
-}
+export const lista_carnes = [
+  {
+    nombre: "HUEVO CON QUESO",
+    precio: "$10.00",
+    descripcion: "Egg and Cheese",
+  },
+  {
+    nombre: "BISTEC EN SALSA",
+    precio: "$10.00",
+    descripcion: "Beef Steak in Sauce",
+  },
+  {
+    nombre: "BISTEC SALTIADO",
+    precio: "$10.00",
+    descripcion: "Pepper Steak",
+  },
+  {
+    nombre: "BISTEC ENCEBOLLADO",
+    precio: "$10.00",
+    descripcion: "Onion Steak",
+  },
+  {
+    nombre: "BISTEC EMPANIZADO",
+    precio: "$10.00",
+    descripcion: "Bread Steak",
+  },
+  {
+    nombre: "CARNE DE RES GUISADA",
+    precio: "$10.00",
+    descripcion: "Beef Stew",
+  },
+  {
+    nombre: "COSTILLAS A LA BBQ",
+    precio: "$8.00",
+    descripcion: "BBQ Spare Ribs",
+  },
+  {
+    nombre: "RABITO GUISADO",
+    precio: "$10.00",
+    descripcion: "Oxtail Stew",
+  },
+  {
+    nombre: "PERNIL",
+    precio: "$8.00",
+    descripcion: "Roast Pork",
+  },
+  {
+    nombre: "CHIVO GISAD0",
+    precio: "$10.00",
+    descripcion: "Goat Stew",
+  },
+  {
+    nombre: "ESPAGUETIS CON ALBONDIGAS",
+    precio: "$7.00",
+    descripcion: "Spaghetti with Meatballs",
+  },
+  {
+    nombre: "CARNE DE CERDO FRITA",
+    precio: "$10.00",
+    descripcion: "Fried Pork",
+  },
+  {
+    nombre: "ALCAPURRIA DE YUCA",
+    precio: "$10.00",
+    descripcion: "Stuffed Fried Cassava",
+  },
+  {
+    nombre: "ALCAPURRIA DE GUINEITO",
+    precio: "$10.00",
+    descripcion: "Stuffed Fried Geen Banana",
+  },
+  {
+    nombre: "CHICHARRON DE CERDO",
+    precio: "$8.00",
+    descripcion: "Pork Fried Chunks",
+  },
+  {
+    nombre: "RELLENO DE PAPA",
+    precio: "$1.00",
+    descripcion: "Stuffed Fried Potato",
+  },
+  {
+    nombre: "MORCILLA",
+    precio: "$8.00",
+    descripcion: "Blood Pudding",
+  },
+  {
+    nombre: "PASTELILLO JAMAIQUINO",
+    precio: "$2.00",
+    descripcion: "Jamaican Beef Patty",
+  },
+  {
+    nombre: "PASTELILLOS DE CARNE",
+    precio: "$1.00",
+    descripcion: "Beef Spanish Patty",
+  },
+  {
+    nombre: "PASTELILLOS DE CARNE/QUESO",
+    precio: "$1.25",
+    descripcion: "Beef/Cheese Spanish Patty",
+  },
+  {
+    nombre: "PASTELILLOS DE POLLO",
+    precio: "$1.25",
+    descripcion: "Spanish Chicken Patty",
+  },
+];

@@ -1,9 +1,11 @@
+import acerca from "../img/acerca-de.jpg";
+
 export const Acerca = () => {
   return (
     <section className='acerca-de' id='acerca-de'>
       <div className='contenedor'>
         <div className='foto'>
-          <img src='img/acerca-de.jpg' alt='' />
+          <img src={acerca} alt='' />
         </div>
         <article>
           <h3>Acerca de</h3>

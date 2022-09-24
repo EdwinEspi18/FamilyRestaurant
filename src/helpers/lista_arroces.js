@@ -1,28 +1,22 @@
-export const lista_arroces = {
-  
-            <div class="platillo">
-              <p class="nombre">ARROZ VEGETAL</p>
-              <p class="precio">$5.00</p>
-              <p class="descripcion">Rice with Vegetables</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">ASOPAO CON CAMARONES</p>
-              <p class="precio">$10.00</p>
-              <p class="descripcion">Shrimp Soupy Rice</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">ARROZ CON POLLO</p>
-              <p class="precio">$7.00</p>
-              <p class="descripcion">Rice with Chicken</p>
-            </div>
-
-            <div class="platillo">
-              <p class="nombre">ARROZ CON CAMARONES</p>
-              <p class="precio">$12.00</p>
-              <p class="descripcion">Rice with Shrimps</p>
-            </div>
-
-
-}
+export const lista_arroces = [
+  {
+    nombre: "ARROZ VEGETAL",
+    precio: "$5.00",
+    descripcion: "Rice with Vegetables",
+  },
+  {
+    nombre: "ASOPAO CON CAMARONES",
+    precio: "$10.00",
+    descripcion: "Shrimp Soupy Rice",
+  },
+  {
+    nombre: "ARROZ CON POLLO",
+    precio: "$7.00",
+    descripcion: "Rice with Chicken",
+  },
+  {
+    nombre: "ARROZ CON CAMARONES",
+    precio: "$12.00",
+    descripcion: "",
+  },
+];
