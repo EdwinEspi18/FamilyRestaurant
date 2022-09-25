@@ -21,6 +21,7 @@ function App() {
       .then(setProducts)
       .catch((err) => console.log(err));
   }, []);
+
   return (
     <>
       <Header />
